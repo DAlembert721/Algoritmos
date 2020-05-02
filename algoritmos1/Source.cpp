@@ -2,6 +2,7 @@
 #include <time.h>
 #include "Burbuja.h"
 #include "Seleccion.h"
+#include "Insertion.h"
 int main() {
 
 	srand(time(NULL));
@@ -14,6 +15,9 @@ int main() {
 	buble->Ordenar();
 	buble->mostrar();
 	Seleccion<int>* selection = new Seleccion<int>(array);
+	selection->Ordenar();
+	selection->mostrar();
+	Insertion<int>* insercion = new Insertion<int>(array);
 	selection->Ordenar();
 	selection->mostrar();
 	return 0;
